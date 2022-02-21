@@ -75,17 +75,4 @@ window.addEventListener('load', () => {
             }
         })
     })
-
-    // creating an table row element for total expenses
-    // const tr_list_total_el = document.createElement('tr');
-    // tr_list_total_el.classList.add('tr-expense-total');
-    // tr_list_total_el.style.display = 'table-row';
-
-    // const td_list_total_el = document.createElement('td');
-    // td_list_total_el.classList.add('td-expense-total');
-    // td_list_total_el.setAttribute('colspan', 4);
-    // td_list_total_el.innerHTML = 'Total expenses: ';
-
-    // tr_list_total_el.appendChild(td_list_total_el);
-    // list_el.appendChild(tr_list_total_el);
 })
