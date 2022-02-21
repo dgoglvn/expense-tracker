@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap');
+
+:root {
+    --font: 'Poppins', sans-serif;
+    --text-color: #333;
+    --green: #078307;
+    /* --bg-color: #C5E7E6; */
+    --expense-bg: #e9e9e9;
+    /* --expense-bg: #F4F5F4; */
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: var(--text-color);
+    position: relative;
+}
+
+header {
+    padding: 1rem 2rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1, h3 {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+header h3 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--green);
+}
+
+form {
+    padding: 1rem 2rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#content {
+    width: 100%;
+    position: relative;
+}
+
+label {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#top-container {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+input {
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+#new-item-name {
+    width: 100%;
+    margin-left: 1rem;
+}
+
+#bottom-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#new-item-date {
+    width: 100%;
+    margin: 0 1rem;
+}
+
+#new-item-date::-webkit-datetime-edit {
+    color: gray;
+}
+
+#new-item-amount {
+    width: 100%;
+    margin-left: 1rem;
+}
+
+#new-item-submit {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    position: inherit;
+    left: 50%;
+    right: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 1rem;
+    background-color: var(--green);
+    color: #eee;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#new-item-submit:hover {
+    opacity: 0.8;
+    box-shadow: 5px 5px #333;
+}
+
+section {
+    padding: 1rem 2rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+table {
+    /* border-collapse: collapse; */
+    border: 1px solid #d1d1d1;
+    border-radius: 1em;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid #d1d1d1;
+    padding: 0.5rem;
+}
+
+#expenses-container {
+    width: 100%;
+}
+
+th {
+    text-align: start;
+}
+
+td {
+    position: relative;
+}
+
+#expenses {
+    background-color: var(--expense-bg);
+}
+
+.expense-delete {
+    position: relative;
+    margin: 0;
+    left: 50%;
+    right: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    cursor: pointer;
+}
