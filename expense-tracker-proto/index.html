@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+        <h3>Add A New Item:</h3>
+    </header>
+
+    <form id="new-item-form">
+        <div id="content">
+            <div id="top-container">
+                <label for="new-item-name">Name:</label>
+                <input 
+                    type="text" 
+                    id="new-item-name" 
+                    placeholder="Where was the expense made?"
+                    required
+                />
+            </div>
+
+            <div id="bottom-container">
+                <label for="new-item-date">Date:</label>
+                <input 
+                    type="date" 
+                    id="new-item-date"
+                    required
+                />
+                <label for="new-item-amount">Amount:</label>
+                <input 
+                    type="number" 
+                    id="new-item-amount"
+                    required
+                />
+            </div>
+            <button id="new-item-submit">Add Expense</button>
+        </div>
+    </form>
+
+    <section id="expense-list">
+        <table id="expenses-container">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="expenses">
+
+                <!-- <tr class="expense">
+                    <td class="td-name">Walmart</td>
+                    <td class="td-date">02/20/2022</td>
+                    <td class="td-amount">$50</td>
+                    <td class="td-delete">
+                        <button class="expense-delete">X</button>
+                    </td>
+                </tr> -->
+
+                <!-- <tr class="empty">
+                    <td class="td-empty" colspan="4">No expenses added yet!</td>
+                </tr> -->
+
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
